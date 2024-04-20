@@ -1,0 +1,195 @@
+@import "./variables";
+@import "./mixin";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0;
+  width: $container-width;
+  height: $container-height;
+  border: $border;
+
+  // ===========heading section======================
+  .wrap-1 {
+    height: 165px;
+    .nav-1 {
+      @include flexing();
+      padding: $padding - 90px $padding - 50px;
+      .logo .logoimg {
+        width: 200px;
+      }
+      .number p {
+        font-size: $font-sizep;
+        letter-spacing: 5px;
+        // line-height: 40px;
+        font-weight: $font-weight;
+        a {
+          text-decoration: none;
+          color: #da5e42;
+          cursor: pointer;
+        }
+      }
+      .list {
+        max-width: 500px;
+        @include flexing();
+        column-gap: 10px;
+        p a {
+          padding: 8px 15px;
+          font-size: $font-sizep - 7px;
+          color: #fff;
+          text-decoration: none;
+          background: #8d3909;
+          border-radius: 5px;
+        }
+      }
+    }
+    .nav-2 {
+      background: #da5e42;
+      ul {
+        padding: 0 $padding - 50px 0 $padding + 300px;
+        @include flexing();
+        li {
+          list-style-type: none;
+          font-size: $font-sizep - 5;
+          line-height: 50px;
+          a {
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+            transition: 0.2s;
+            &:hover {
+              padding: 8px 15px;
+              background: #8d3909;
+              border-radius: 5px;
+              color: #fff;
+            }
+            &:active {
+              padding: 8px 15px;
+              background: #8d3909;
+              border-radius: 5px;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // =============image bg section===============
+
+  .wrap-2 {
+    height: 800px;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
+      url(../images/background-1.png);
+    background-size: cover;
+    padding: $padding + 100px $padding + 150px 0;
+    h3 {
+      max-width: 900px;
+      text-align: center;
+      line-height: 95px;
+      font-size: $font-sizeh + 30px;
+      font-weight: $font-weight;
+      text-transform: capitalize;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: $font-sizep - 5px;
+      text-align: center;
+      font-weight: $font-weight;
+      max-width: 700px;
+      color: #ccc;
+      line-height: 30px;
+      margin-left: 50px;
+    }
+  }
+
+  //  ==========what are home care section==========
+
+  .wrap-3 {
+    height: 750px;
+    background: #fff;
+    h3 {
+      font-size: $font-sizeh;
+      font-weight: $font-weight;
+      color: #123;
+      text-align: center;
+      padding: $padding $padding - 50px $padding $padding - 50px;
+      &::after {
+        content: " ";
+        width: 350px;
+        border: 4px solid #8d3909;
+        position: absolute;
+        border-radius: 5px;
+        left: 500px;
+        bottom: -500px;
+      }
+    }
+
+    .flexbox-1 {
+      @include flexing();
+      padding: 0 $padding - 50px;
+      align-items: normal;
+      .col-1 {
+        max-width: 600px;
+        .red-text {
+          font-size: $font-sizep - 5px;
+          padding-bottom: 50px;
+          color: #da5e42;
+          font-weight: $font-weight;
+          word-spacing: 5px;
+        }
+        p {
+          font-size: $font-sizep - 5px;
+          padding-bottom: 50px;
+          color: #123;
+          line-height: 30px;
+          font-weight: $font-weight;
+          word-spacing: 5px;
+          max-width: 650px;
+        }
+      }
+      .col-2 {
+        max-width: 850px;
+        .man-img {
+          width: 600px;
+        }
+      }
+    }
+  }
+
+  // =============section=============
+
+  .wrap-4 {
+    height: 700px;
+    background: #fff;
+    .flexbox-2 {
+      @include flexing();
+      padding: $padding - 50px $padding - 30px;
+      .col-1 {
+        max-width: 350px;
+        h4 {
+          font-size: $font-sizep;
+          font-weight: $font-weight;
+          color: #123;
+          line-height: 50px;
+          .fa-square {
+            font-size: $font-sizep - 5px;
+            color: #8d3909;
+          }
+        }
+        p {
+          font-size: $font-sizep - 7px;
+          // color: #ccc;
+          line-height: 25px;
+          font-weight: $font-weight;
+        }
+      }
+    }
+  }
+}
