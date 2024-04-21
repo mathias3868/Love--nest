@@ -166,7 +166,7 @@
   // =============section=============
 
   .wrap-4 {
-    height: 700px;
+    height: 600px;
     background: #fff;
     .flexbox-2 {
       @include flexing();
@@ -185,11 +185,334 @@
         }
         p {
           font-size: $font-sizep - 7px;
-          // color: #ccc;
+          color: #666;
           line-height: 25px;
           font-weight: $font-weight;
         }
       }
     }
   }
+
+  // ===========call us section==========
+
+  .wrap-5 {
+    height: 600px;
+    margin-top: 50px;
+    .col-1 {
+      height: 80px;
+      background: #da5e42;
+      @include flexing();
+      padding: 0 $padding * 3;
+      .text {
+        font-size: $font-sizep;
+        font-weight: $font-weight;
+        color: #fff;
+        word-spacing: 5px;
+      }
+      .number {
+        font-size: $font-sizep - 5px;
+        padding: 15px 30px;
+        background: #fff;
+        border-radius: 20px;
+        color: #da5e42;
+        font-weight: $font-weight;
+      }
+    }
+    .col-2 {
+      background: rgba(218, 94, 66, 0.4);
+      h3 {
+        font-size: $font-sizeh;
+        font-weight: $font-weight;
+        color: #123;
+        text-align: center;
+        padding: $padding $padding - 50px $padding $padding - 50px;
+        &::after {
+          content: " ";
+          width: 400px;
+          border: 4px solid #8d3909;
+          position: absolute;
+          border-radius: 5px;
+          left: 470px;
+          bottom: -1980px;
+        }
+      }
+      .flexbox {
+        @include flexing();
+        align-items: normal;
+        padding: 0 $padding $padding - 50px $padding - 50px;
+        p {
+          max-width: 500px;
+          font-size: $font-sizep - 5px;
+          color: #123;
+          font-weight: $font-weight;
+          line-height: 25px;
+        }
+        ul {
+          max-width: 300px;
+          list-style-type: none;
+          li {
+            padding-bottom: 35px;
+            font-size: $font-sizep - 5px;
+            font-weight: $font-weight;
+            .fa-check {
+              color: green;
+              font-size: $font-sizep - 7px;
+              font-weight: $font-weight;
+              padding-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // ===========section=========================
+
+  .wrap-6 {
+    height: 600px;
+    background: #fff;
+    .flexbox {
+      @include flexing();
+      align-items: normal;
+      padding: $padding - 50px $padding - 50px;
+      .col-1 {
+        max-width: 500px;
+        h3 {
+          font-size: $font-sizeh - 5px;
+          font-weight: $font-weight;
+          line-height: 40px;
+          color: #123;
+          padding-bottom: 30px;
+        }
+        p {
+          font-size: $font-sizep - 3px;
+          font-weight: $font-weight;
+          color: #123;
+          padding-bottom: 40px;
+        }
+        ul li {
+          list-style-type: none;
+          font-size: $font-sizep - 5px;
+          font-weight: $font-weight;
+          padding-bottom: 30px;
+          .fa-check {
+            color: green;
+            padding-right: 10px;
+          }
+        }
+      }
+      .col-2 {
+        max-width: 600px;
+        .man-img {
+          width: 600px;
+        }
+        p {
+          max-width: 550px;
+          font-size: $font-sizep - 5px;
+          font-weight: $font-weight;
+          line-height: 25px;
+          color: #123;
+          text-align: center;
+          padding-left: 60px;
+        }
+        button {
+          padding: 10px 20px;
+          background: #8d3909;
+          color: #fff;
+          font-size: $font-sizep - 7px;
+          font-weight: $font-weight;
+          text-align: center;
+          border-radius: 10px;
+          margin: 30px 220px 30px;
+        }
+      }
+    }
+  }
+
+  // ==============section===========
+
+  .wrap-7 {
+    height: 1350px;
+    background: #fff;
+    .flexbox-1 {
+      @include flexing();
+      align-items: normal;
+      padding: $padding - 50px $padding - 50px;
+      .col-1 {
+        max-width: 600px;
+        .man-img {
+          width: 600px;
+        }
+      }
+      .col-2 {
+        max-width: 500px;
+        h3 {
+          font-size: $font-sizeh;
+          font-weight: $font-weight;
+          padding-bottom: $padding - 20px;
+          color: #123;
+          &::after {
+            content: " ";
+            width: 150px;
+            border: 4px solid #8d3909;
+            position: absolute;
+            border-radius: 5px;
+            left: 800px;
+            bottom: -3095px;
+          }
+        }
+        .red-text {
+          color: #da5e42;
+          font-size: $font-sizep;
+          font-weight: $font-weight;
+          word-spacing: 5px;
+          padding-bottom: $padding - 50px;
+          line-height: 30px;
+          max-width: 450px;
+        }
+        p {
+          color: #666;
+          font-size: $font-sizep - 5px;
+          font-weight: $font-weight;
+          line-height: 25px;
+          max-width: 420px;
+        }
+      }
+    }
+    .sperate-text {
+      font-size: $font-sizep;
+      font-weight: $font-weight;
+      color: #123;
+      word-spacing: 5px;
+      padding: $padding - 80px $padding - 50px $padding - 50px;
+    }
+    .flexbox-2 {
+      @include flexing();
+      padding: $padding - 50px $padding - 30px;
+      .col-1 {
+        max-width: 350px;
+        h4 {
+          font-size: $font-sizep;
+          font-weight: $font-weight;
+          color: #123;
+          line-height: 50px;
+          .fa-square {
+            font-size: $font-sizep - 5px;
+            color: #8d3909;
+          }
+        }
+        p {
+          font-size: $font-sizep - 7px;
+          color: #666;
+          line-height: 25px;
+          font-weight: $font-weight;
+        }
+      }
+    }
+  }
+
+  // ================section==============
+
+  .wrap-8 {
+    height: 1800px;
+    background: #fff;
+    .flex-box-1 {
+      @include flexing();
+      padding: $padding - 50px;
+      align-items: normal;
+      margin-bottom: 300px;
+      .col-1 {
+        max-width: 700px;
+        .man-img1 {
+          position: absolute;
+          margin-top: 250px;
+        }
+        .man-img2 {
+          position: absolute;
+          margin-left: 400px;
+          margin-top: 250px;
+          z-index: 1;
+        }
+        .man-img3 {
+          position: absolute;
+          margin-top: 400px;
+          margin-left: 75px;
+        }
+        .man-img4 {
+          position: absolute;
+          margin-top: 650px;
+          z-index: 1;
+        }
+      }
+      .col-2 {
+        max-width: 500px;
+        .headtext {
+          font-size: $font-sizep - 5px;
+          color: #da5e42;
+          padding-bottom: $padding - 50px;
+          font-weight: $font-weight;
+        }
+        h3 {
+          font-size: $font-sizeh - 7px;
+          font-weight: $font-weight;
+          line-height: 60px;
+          padding-bottom: $padding - 50px;
+          span {
+            color: #da5e42;
+          }
+        }
+        p {
+          font-size: $font-sizep - 7px;
+          font-weight: $font-weight;
+          line-height: 28px;
+          color: #666;
+        }
+      }
+    }
+    .h3text {
+      font-size: $font-sizeh;
+      font-weight: $font-weight;
+      color: #123;
+      text-align: center;
+      padding: $padding - 50px 0 $padding - 50px;
+      &::after {
+        content: " ";
+        width: 400px;
+        border: 4px solid #8d3909;
+        position: absolute;
+        border-radius: 5px;
+        left: 470px;
+        bottom: -5380px;
+      }
+    }
+    .flex-box-2 {
+      @include flexing();
+      align-items: normal;
+      padding: $padding - 50px $padding - 50px;
+      .col-3 {
+        max-width: 500px;
+        .redtext {
+          color: #da5e42;
+          font-size: $font-sizep - 3px;
+          word-spacing: 5px;
+          font-weight: $font-weight;
+          max-width: 400px;
+          line-height: 30px;
+        }
+        p {
+          font-size: $font-sizep - 7px;
+          line-height: 25px;
+          color: #666;
+          max-width: 450px;
+          font-weight: $font-weight;
+          padding-top: $padding - 50px;
+        }
+      }
+      .col-4 {
+        max-width: 700px;
+      }
+    }
+  }
+
+  // ===========section===================
 }
