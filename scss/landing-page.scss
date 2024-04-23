@@ -12,6 +12,7 @@
   width: $container-width;
   height: $container-height;
   border: $border;
+  // font-family: Arial, Helvetica, sans-serif;
 
   // ===========heading section======================
   .wrap-1 {
@@ -25,7 +26,6 @@
       .number p {
         font-size: $font-sizep;
         letter-spacing: 5px;
-        // line-height: 40px;
         font-weight: $font-weight;
         a {
           text-decoration: none;
@@ -515,4 +515,58 @@
   }
 
   // ===========section===================
+
+  .wrap-9 {
+    height: 650px;
+    .col-1 {
+      background: #da5e42;
+      height: 70px;
+      p {
+        font-size: $font-sizep - 3px;
+        font-weight: $font-weight;
+        color: #fff;
+        text-align: center;
+        line-height: 80px;
+        word-spacing: 5px;
+      }
+    }
+    .flexbox {
+      padding: $padding $padding * 2;
+      background: #fff;
+      .col-2 {
+        max-width: 600px;
+        position: absolute;
+      }
+      .col-3 {
+        width: 400px;
+        padding: 30px;
+        background: #da5e42;
+        position: absolute;
+        margin-left: 550px;
+        margin-top: 50px;
+        .fa-quote-left {
+          font-size: $font-sizep - 2px;
+          font-weight: $font-weight;
+          color: #fff;
+        }
+        p {
+          font-size: $font-sizep - 5px;
+          color: #fff;
+          line-height: 25px;
+          font-weight: $font-weight;
+        }
+        small {
+          font-size: $font-sizep - 7px;
+          font-weight: $font-weight;
+          color: #ccc;
+          line-height: 70px;
+          &::after {
+            height: 50px;
+            border: 1px solid #ccc;
+            // padding-left: 20px;
+          }
+        }
+      }
+    }
+  }
 }

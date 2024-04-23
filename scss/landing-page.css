@@ -509,4 +509,56 @@
 }
 .container .wrap-8 .flex-box-2 .col-4 {
   max-width: 700px;
+}
+.container .wrap-9 {
+  height: 650px;
+}
+.container .wrap-9 .col-1 {
+  background: #da5e42;
+  height: 70px;
+}
+.container .wrap-9 .col-1 p {
+  font-size: 22px;
+  font-weight: 700px;
+  color: #fff;
+  text-align: center;
+  line-height: 80px;
+  word-spacing: 5px;
+}
+.container .wrap-9 .flexbox {
+  padding: 100px 200px;
+  background: #fff;
+}
+.container .wrap-9 .flexbox .col-2 {
+  max-width: 600px;
+  position: absolute;
+}
+.container .wrap-9 .flexbox .col-3 {
+  width: 400px;
+  padding: 30px;
+  background: #da5e42;
+  position: absolute;
+  margin-left: 550px;
+  margin-top: 50px;
+}
+.container .wrap-9 .flexbox .col-3 .fa-quote-left {
+  font-size: 23px;
+  font-weight: 700px;
+  color: #fff;
+}
+.container .wrap-9 .flexbox .col-3 p {
+  font-size: 20px;
+  color: #fff;
+  line-height: 25px;
+  font-weight: 700px;
+}
+.container .wrap-9 .flexbox .col-3 small {
+  font-size: 18px;
+  font-weight: 700px;
+  color: #ccc;
+  line-height: 70px;
+}
+.container .wrap-9 .flexbox .col-3 small::after {
+  height: 50px;
+  border: 1px solid #ccc;
 }/*# sourceMappingURL=landing-page.css.map */
